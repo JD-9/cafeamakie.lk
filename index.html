@@ -5,18 +5,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
-    <title>Café Amakie | Home</title>
+    <link rel="shortcut icon" href="./assets/images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/c3524181bb.js" crossorigin="anonymous"></script>
+    <script src="./javascript/navigation.js" defer></script>
+    <script src="./javascript/index.js" defer></script>
+    <title>Café Amakie | The Finest Coffee Experience</title>
 </head>
 
 <body>
     <header>
-        <div id="header-container">
-            <a href="index.html">
-                <img id="header-logo" src="assets/images/header/cafe_amakie_logo.jpg" alt="Cafe Amakie">
-            </a>
-        </div>
+        <nav>
+            <div class="nav-container">
+                <div class="logo">
+                    <img id="header-logo" src="./assets/images/header/cafe_amakie_logo.jpg" alt="Cafe Amakie">
+                </div>
+                <div id="main-heading">
+                    <h1>Café Amakie</h1>
+                </div>
+                <div class="nav-btn">
+                    <div class="burger-line"></div>
+                </div>
+            </div>
+            <ul id="nav-list">
+                <li> <a href="#" class="nav-links">Home</a> </li>
+                <li> <a href="#" class="nav-links">Gallery</a> </li>
+                <li> <a href="#" class="nav-links">About Us</a> </li>
+                <li> <a href="#" class="nav-links">Contact Us</a> </li>
+                <li> <a href="#" class="nav-links">Our Locations</a> </li>
+            </ul>
+        </nav>
     </header>
+    <main>
+        <section id="slider-1">
+            <div id="video-slider">
+                <video src="./assets/videos/image-slider/video_1.mp4" type="video/mp4" class="video-slide-1"
+                    id="video-slide-1" autoplay muted></video>
+                <video src="./assets/videos/image-slider/video_2.mp4" type="video/mp4" class="video-slide-2"
+                    id="video-slide-2" muted></video>
+                <video src="./assets/videos/image-slider/video_3.mp4" type="video/mp4" class="video-slide-3"
+                    id="video-slide-3" muted></video>
+            </div>
+            <div id="slide-btns">
+                <a id="slide-btn" href="#">Our Menu</a>
+                <a id="slide-btn-2" href="#">About Us</a>
+                <a id="slide-btn-3" href="#">Delivery</a>
+            </div>
+        </section>
+        <section id="preview-gallery">
+            <h2>Café Amakie</h2>
+            <h3>We are here for your uncommon taste of various kinds of foods and coffees</h3>
+            <div id="prev-img-container">
+                <img src="./assets/images/preview-gallery/prev-img-1.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-2.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-3.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-4.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-5.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-6.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-7.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-8.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-9.jpg" class="prev-imgs">
+                <img src="./assets/images/preview-gallery/prev-img-10.jpg" class="prev-imgs">
+            </div>
+            <a href="#" id="gallery-btn">View Gallery</a>
+        </section>
+        <section id="menu">
+            <h2>Our Menu</h2>
+            <h3>Hello to You! You will find food, harmony, and happiness here.</h3>
+            <div id="menu-cards">
+                <h3 class="menu-headings">Beverages</h3>
+                <img src="./assets/images/menu/beverages.jpg" class="menu-imgs">
+                <h3 class="menu-headings">Breakfast & Lunch</h3>
+                <img src="./assets/images/menu/breakfast-lunch.jpg" class="menu-imgs">
+                <h3 class="menu-headings">Food</h3>
+                <img src="./assets/images/menu/food.jpg" class="menu-imgs">
+            </div>
+        </section>
+        <section id="accordian-container">
+            <details>
+                <summary><i class="fa-solid fa-chevron-right"></i> Order and Delivery</summary>
+                <div class="accordian-text">
+                    <p>
+                        To deliver our products to you, you've to use <a href="#">PickMe Food</a> or <a href="#">Uber
+                            Eats</a> services.
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary><i class="fa-solid fa-chevron-right"></i> Business Partners</summary>
+                <div class="accordian-text">
+                    <p>
+                        To get to know about our business partners, <a href="#">contact us.</a>
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary><i class="fa-solid fa-chevron-right"></i> Careers</summary>
+                <div class="accordian-text">
+                    <p>
+                        Visit our <a href="#">careers</a> page for available vacancies.
+                    </p>
+                </div>
+            </details>
+        </section>
+    </main>
+    <footer>
+        <img id="footer-logo" src="./assets/images/header/cafe_amakie_logo.jpg" alt="Cafe Amakie">
+        <p id="footer-text">Café Amakie is one of the few places in Sri Lanka which offers the finest coffee experience!
+        </p>
+        <div class="locations">
+            <div class="location">
+                <h3>Narammala</h3>
+                <p>Negombo Road, Kivulgalla, Narammala</p>
+                <p class="phone"> <i class="fas fa-phone"></i> +94 77 738 7355 </p>
+            </div>
+            <div class="location">
+                <h3>Kurunegala</h3>
+                <p>Dambulla Road, Kurunegala</p>
+                <p class="phone"> <i class="fas fa-phone"></i> +94 37 2223 242 </p>
+            </div>
+            <div id="copyright">
+                <p>&copy; 2022, Café Amakie - All Rights Reserved</p>
+            </div>
+    </footer>
 </body>
 
 </html>
