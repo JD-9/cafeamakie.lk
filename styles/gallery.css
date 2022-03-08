@@ -1,0 +1,67 @@
+/* Import main styles */
+@import url(../styles/main.css);
+
+/* Gallery */
+#gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-block-start: 8rem;
+    background-color: var(--palette-color-2);
+}
+
+#gallery-heading {
+    text-align: center;
+    color: var(--palette-color-4);
+}
+
+#gallery-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-inline: 1.3rem;
+}
+
+#gallery-container > div {
+    margin-block: 1rem;
+    inline-size: 80vw;
+}
+
+#gallery-container > div > img {
+    inline-size: 100%;
+    border: 1px solid var(--palette-color-4);
+    border-radius: .3rem;
+}
+
+/* Fixes for laptop, desktop, and big screens */
+@media screen and (min-width: 1023px) {
+    #gallery {
+        padding-block-start: 12rem;
+    }
+
+    #gallery-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #gallery-container > div {
+        inline-size: 40vw;
+        block-size: 100%;
+        margin-inline: 2rem;
+        margin-block: 2rem;
+    }
+
+    #gallery-heading {
+        margin-block-end: 2rem;
+    }
+
+    #gallery-container > div > img {
+        
+    }
+}

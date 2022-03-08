@@ -87,8 +87,7 @@
 #preview-gallery, #menu {
     background-color: var(--palette-color-3);
     color: var(--palette-color-1);
-    font-weight: lighter;
-    padding: 1rem;
+    font-weight: normal;
     text-align: center;
     padding-inline: .5rem;
     padding-block: 2rem;
@@ -125,6 +124,7 @@
     margin-block-end: 1.3rem;
     border-radius: .2rem;
     transition: all .5s ease-in-out;
+    font-weight: bold;
 }
 
 /* Fixes for tablet screens */
@@ -144,9 +144,29 @@
 
 /* Fixes for laptops, desktops, and big screens */
 @media screen and (min-width: 1023px) {
+    #preview-gallery {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    #prev-img-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-inline-start: 5rem;
+    }
+    
     .prev-imgs {
-        block-size: 100%;
-        inline-size: 60vw;
+        block-size: 90%;
+        inline-size: 90%;
+    }
+
+    #gallery-btn {
+        block-size: 2.3rem;
+        inline-size: 10rem;
+        font-size: 1.3rem;
     }
 }
 

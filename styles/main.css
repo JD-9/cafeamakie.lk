@@ -26,13 +26,14 @@
 
 header{
     background-image: url(../assets/images/header/coffee1.jpg);
-    background-size: 30rem 15rem;
+    background-size: 100%;
     background-position: center;
     background-color: var(--palette-color-1);
     padding: .5rem;
     position: absolute;
     width: 100%;
     z-index: 1000;
+    background-repeat: repeat-y;
 }
 
 #main-heading {
@@ -246,12 +247,12 @@ footer {
     color: var(--palette-color-4);
     font-size: 1.2rem;
     margin-top: 1rem;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
 .location {
     margin: 1rem 0rem;
-    font-weight: bolder;
+    font-weight: normal;
 }
 
 .phone {

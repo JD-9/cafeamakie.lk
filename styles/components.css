@@ -3,24 +3,14 @@
 
 :root {
     --palette-color-1: #493323;
-    
     --palette-color-2: #91684A;
-    
     --palette-color-3: #EAAC7F;
-    
     --palette-color-4: #FFDF91;
-
     --palette-color-5: #6C4C36;
-
     --palette-color-3_1: #bf8d69;
-
     --alt-color-1: #d4d4d4;
-
     --alt-color-2: #db7c00;
-
     --alt-color-3: #00FFFFFF;
-    
     --main-font: 'nyx-std', sans-serif;
-
     --bg-noise-1: url(../assets/images/backgrounds/noise-1.png);
 }

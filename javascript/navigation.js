@@ -1,3 +1,16 @@
+// Navigation links
+let navLinks = document.querySelectorAll('.nav-links');
+
+navLinks.forEach(function (navLink) {
+    navLink.addEventListener('click', function () {
+        navLinks.forEach(function (navLink) {
+            navLink.classList.remove('nav-active');
+        });
+        this.classList.add('nav-active');
+    });
+});
+
+// Navigation animations
 const navBtn = document.querySelector('.nav-btn');
 const burgerLine = document.querySelector('.burger-line');
 const navList = document.getElementById('nav-list');

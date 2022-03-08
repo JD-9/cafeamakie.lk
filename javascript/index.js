@@ -1,15 +1,3 @@
-// Navigation
-let navLinks = document.querySelectorAll('.nav-links');
-
-navLinks.forEach(function (navLink) {
-    navLink.addEventListener('click', function () {
-        navLinks.forEach(function (navLink) {
-            navLink.classList.remove('nav-active');
-        });
-        this.classList.add('nav-active');
-    });
-});
-
 // Video slider
 const videoSlide1 = document.getElementById('video-slide-1');
 const videoSlide2 = document.getElementById('video-slide-2');
