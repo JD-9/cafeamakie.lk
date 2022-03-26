@@ -10,7 +10,7 @@ navLinks.forEach(function (navLink) {
     });
 });
 
-// Navigation animations
+// Navigation hamburger animations
 const navBtn = document.querySelector('.nav-btn');
 const burgerLine = document.querySelector('.burger-line');
 const navList = document.getElementById('nav-list');
@@ -31,3 +31,13 @@ navBtn.addEventListener('click', () => {
         menuOpen = false;
     }
 });
+
+// Navigate to locations
+let locationsBtn = document.getElementById('locations-btn');
+let footer = document.getElementById('footer');
+
+locationsBtn.addEventListener('click', navigateToBottom, false);
+
+function navigateToBottom(event) {
+    footer.scrollIntoView({ behavior: 'smooth' });
+}

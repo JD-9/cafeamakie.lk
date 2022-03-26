@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="../styles/gallery.css">
-    <script src="https://kit.fontawesome.com/c3524181bb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c3524181bb.js" crossorigin="anonymous" defer></script>
     <script src="../javascript/navigation.js" defer></script>
-    <script src="../javascript/gallery.js" defer></script>
-    <title>Café Amakie | The Finest Coffee Experience</title>
+    <title>Café Amakie | The Gallery</title>
 </head>
 
 <body>
@@ -32,7 +31,7 @@
                 <li> <a href="#" class="nav-links">Gallery</a> </li>
                 <li> <a href="./about_us.html" class="nav-links">About Us</a> </li>
                 <li> <a href="./contact_us.html" class="nav-links">Contact Us</a> </li>
-                <li> <a href="./our_locations.html" class="nav-links">Our Locations</a> </li>
+                <li> <a href="javascript:void(0)" class="nav-links" id="locations-btn">Our Locations</a> </li>
             </ul>
         </nav>
     </header>
@@ -103,7 +102,7 @@
             </div>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <img id="footer-logo" src="../assets/images/header/cafe_amakie_logo.jpg" alt="Cafe Amakie">
         <p id="footer-text">Café Amakie is one of the few places in Sri Lanka which offers the finest coffee experience!
         </p>
@@ -121,6 +120,7 @@
             <div id="copyright">
                 <p>&copy; 2022, Café Amakie - All Rights Reserved</p>
             </div>
+        </div>
     </footer>
 </body>
 

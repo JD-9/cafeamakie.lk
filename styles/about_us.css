@@ -1,0 +1,230 @@
+/* CSS for the about us page */
+
+/* Import main styles */
+@import url(main.css);
+
+/* Fixes for the HTML root/main/body */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--alt-color-1);
+}
+
+main {
+    -webkit-padding-before: 6rem;
+            padding-block-start: 6rem;
+    font-size: 2rem;
+    -webkit-padding-after: 2rem;
+            padding-block-end: 2rem;
+    background-color: var(--alt-color-1);
+    background-image: url(../assets/images/backgrounds/noise-1.png);
+}
+
+/* About us section */
+.about-us {
+    padding-block: 1rem;
+    background: var(--palette-color-5);
+}
+
+.about-us h2 {
+    font-size: 2rem;
+    -webkit-margin-after: 1.5rem;
+            margin-block-end: 1.5rem;
+    text-align: center;
+    color: var(--palette-color-4);
+}
+
+.about-us p {
+    font-size: 1.2rem;
+    padding-inline: 1.3rem;
+    color: var(--alt-color-1);
+    line-height: 1.5;
+}
+
+.about-us p i {
+    -webkit-margin-end: .5rem;
+            margin-inline-end: .5rem;
+    color: var(--palette-color-4);
+}
+
+/* Image slider */
+.img-slider {
+    position: relative;
+    inline-size: 100%;
+    block-size: 100%;
+    background: var(--palette-color-4);
+}
+
+/* Slider images */
+.img-slider .slide {
+    z-index: 1;
+    position: absolute;
+    inline-size: 100%;
+    -webkit-clip-path: circle(0% at 50% 0);
+            clip-path: circle(0% at 50% 0);
+}
+
+.img-slider .slide.active {
+    -webkit-clip-path: circle(100.0% at 50% 0);
+            clip-path: circle(100.0% at 50% 0);
+    transition: -webkit-clip-path 2s;
+    transition: clip-path 2s;
+    transition: clip-path 2s, -webkit-clip-path 2s;
+}
+
+.img-slider .slide img {
+    z-index: 1;
+    inline-size: 100%;
+}
+
+/* Review */
+.img-slider .slide .review {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    overflow: hidden;
+    font-size: 1rem;
+    padding-block: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.5;
+}
+
+blockquote {
+    color: paleturquoise;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(3, 54, 123, 1);
+    padding-inline: 2rem;
+    border-radius: .5rem;
+}
+
+blockquote > span {
+    font-style: italic;
+}
+
+.stars {
+    color: var(--palette-color-4);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    -webkit-margin-before: .3rem;
+            margin-block-start: .3rem;
+}
+
+/* Slide controls */
+.img-slider .slide-controls {
+    z-index: 2;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    -webkit-margin-before: 2rem;
+            margin-block-start: 2rem;
+    left: 95%;
+    transform: translateX(-50%);
+}
+
+.img-slider .slide-controls .control {
+    background: var(--alt-color-1);
+    inline-size: 12px;
+    block-size: 12px;
+    margin: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 1s;
+}
+
+.img-slider .slide-controls .control.active {
+    background: var(--palette-color-4);
+    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+}
+
+/* Social section */
+.social {
+    -webkit-margin-before: 16rem;
+            margin-block-start: 16rem;
+    background-color: var(--alt-color-1);
+    background-image: url(../assets/images/backgrounds/noise-1.png);
+    text-align: center;
+    -webkit-padding-before: 1rem;
+            padding-block-start: 1rem;
+}
+
+.social h2 {
+    font-size: 2rem;
+    color: var(--palette-color-5);
+}
+
+.social-icons a {
+    margin-inline: 1rem;
+}
+
+.social-icons a:first-child {
+    color: #3b5998;
+}
+
+.social-icons a:nth-child(2) {
+    color: #dd2a7b;
+}
+
+/* Fixes for tablets */
+@media screen and (min-width: 768px) {
+    .img-slider .slide-controls .control {
+        inline-size: 15px;
+        block-size: 15px;
+    }
+
+    blockquote {
+        font-size: 1.2rem;
+    }
+
+    .slide-controls {
+        top: 10rem;
+    }
+
+    blockquote {
+        -webkit-margin-before: 22rem;
+                margin-block-start: 22rem;
+    }
+
+    .social {
+        -webkit-margin-before: 35rem;
+                margin-block-start: 35rem;
+    }
+}
+
+/* Fixes for laptops, desktops, and big screens */
+@media screen and (min-width: 1024px) {
+    .img-slider .slide-controls .control {
+        inline-size: 20px;
+        block-size: 20px;
+    }
+
+    blockquote {
+        font-size: 1.5rem;
+        -webkit-margin-before: 25rem;
+                margin-block-start: 25rem;
+        padding-inline: 10rem;
+    }
+
+    .slide img {
+        block-size: 100vh;
+    }
+
+    .slide-controls {
+        top: 15rem;
+    }
+
+    main {
+        -webkit-padding-before: 8.5rem;
+                padding-block-start: 8.5rem;
+    }
+
+    .social {
+        -webkit-margin-before: 50rem;
+                margin-block-start: 50rem;
+    }
+}

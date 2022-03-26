@@ -1,0 +1,65 @@
+/* CSS for the delivery page */
+
+/* Import main styles */
+@import url(main.css);
+
+/* Fixes for the HTML main */
+main {
+    -webkit-padding-before: 8rem;
+            padding-block-start: 8rem;
+    background-image: url(../assets/images/backgrounds/noise-1.png);
+    background-color: var(--palette-color-1);
+    font-size: 2rem;
+    padding-inline: .3rem;
+    -webkit-padding-after: 2rem;
+            padding-block-end: 2rem;
+}
+
+/* Fixes for laptops, desktops, and big screens */
+@media screen and (min-width: 1024px) {
+    main {
+        -webkit-padding-before: 10rem;
+                padding-block-start: 10rem;
+    }
+}
+
+/* Delivery */
+h2 {
+    color: var(--palette-color-4);
+    font-size: 2.3rem;
+    text-align: center;
+    padding-block: 1.2rem;
+    text-decoration: underline;
+}
+
+.delivery, .drive-thru {
+    text-align: end;
+    color: var(--alt-color-1);
+}
+
+.delivery-end, .drive-thru-end {
+    text-align: start;
+    color: var(--alt-color-1);
+}
+
+.delivery-highlighted {
+    /* font-weight: bold; */
+    color: var(--palette-color-4);
+}
+
+#delivery-img-container, #drive-thru-img-container {
+    padding-block: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#delivery-img, #drive-thru-img {
+    inline-size: 90vw;
+    block-size: 100%;
+}
+
+#drive-thru-heading {
+    -webkit-margin-before: 4rem;
+            margin-block-start: 4rem;
+}

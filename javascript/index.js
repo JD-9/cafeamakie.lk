@@ -9,14 +9,13 @@ let slideBtn2 = document.getElementById('slide-btn-2');
 let slideBtn3 = document.getElementById('slide-btn-3');
 
 window.onload = function () {
-    slideBtn.style.marginTop = '0';
+    slideBtn.style.marginTop = '-10rem';
 }
 
 videoSlide1.onended = function () {
     videoSlide2.play();
     videoSlide1.style.opacity = 0;
     videoSlide2.style.opacity = 1;
-    console.log('1 ended');
     slideBtn.style.opacity = 0;
     slideBtn.style.visibility = 'hidden';
     slideBtn2.style.opacity = 1;
@@ -29,7 +28,6 @@ videoSlide2.onended = function () {
     videoSlide3.play();
     videoSlide2.style.opacity = 0;
     videoSlide3.style.opacity = 1;
-    console.log('2 ended');
     slideBtn2.style.opacity = 0;
     slideBtn2.style.visibility = 'hidden';
     slideBtn3.style.opacity = 1;
@@ -42,7 +40,6 @@ videoSlide3.onended = function () {
     videoSlide1.play();
     videoSlide3.style.opacity = 0;
     videoSlide1.style.opacity = 1;
-    console.log('3 ended');
     slideBtn3.style.opacity = 0;
     slideBtn3.style.visibility = 'hidden';
     slideBtn.style.opacity = 1;

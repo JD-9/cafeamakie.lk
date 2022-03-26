@@ -1,0 +1,22 @@
+/* CSS for the about us page */
+
+/* Import main styles */
+@import url(main.css);
+
+/* Fixes for the HTML root/main/body */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--alt-color-1);
+}
+
+main {
+    -webkit-padding-before: 6rem;
+            padding-block-start: 6rem;
+    font-size: 2rem;
+    -webkit-padding-after: 2rem;
+            padding-block-end: 2rem;
+    background-color: var(--palette-color-1);
+}

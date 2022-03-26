@@ -1,0 +1,108 @@
+/* CSS for the contact us page */
+
+/* Import main styles */
+@import url(main.css);
+
+/* Fixes for the HTML root/main/body */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--alt-color-1);
+}
+
+main {
+    -webkit-padding-before: 7rem;
+            padding-block-start: 7rem;
+    font-size: 2rem;
+    -webkit-padding-after: 2rem;
+            padding-block-end: 2rem;
+    background-color: var(--palette-color-5);
+}
+
+/* contact_us_main */
+#contact_us_main {
+    text-align: center;
+    color: var(--palette-color-4);
+}
+
+#contact_us_main h2 {
+    font-size: 2rem;
+}
+
+#contact_us_main p {
+    font-size: 1.3rem;
+    color: var(--alt-color-1);
+}
+
+#contact_us_main img {
+    inline-size: 100%;
+    block-size: auto;
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+    border: 1px solid var(--palette-color-4);
+    border-radius: 5px;
+}
+
+div a h3 {
+    text-align: center;
+    font-size: 1.7rem;
+}
+
+div a p {
+    font-size: 1.5rem;
+    color: var(--alt-color-1);
+}
+
+div a {
+    text-decoration: none;
+    color: inherit;
+    font-size: inherit;
+}
+
+div a i {
+    margin-block: 1rem;
+}
+
+#contact_us_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--palette-color-4);
+}
+
+#phone, #text, #email {
+    border: 1px solid var(--palette-color-4);
+    margin-block: 1rem;
+    border-radius: 5px;
+    padding: .5rem;
+    width: 90%;
+}
+
+/* Fixes for tablets */
+@media screen and (min-width: 768px) {
+    main {
+        padding-block-start: 8rem;
+    }
+
+    #phone, #text, #email {
+        inline-size: 70%;
+        block-size: auto;
+    }
+}
+
+/* Fixes for laptops, desktops, and big screens */
+@media screen and (min-width: 1024px) {
+    main {
+        padding-block-start: 10rem;
+    }
+
+    #phone, #text, #email {
+        inline-size: 50%;
+        block-size: auto;
+    }
+}

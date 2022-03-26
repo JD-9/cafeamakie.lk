@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="styles/index.css">
-    <script src="https://kit.fontawesome.com/c3524181bb.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/c3524181bb.js" crossorigin="anonymous" defer></script>
     <script src="./javascript/navigation.js" defer></script>
     <script src="./javascript/index.js" defer></script>
-    <title>Café Amakie | The Finest Coffee Experience</title>
+    <title>Café Amakie | Have a Coffee Moment</title>
 </head>
 
 <body>
@@ -32,7 +32,7 @@
                 <li> <a href="./pages/gallery.html" class="nav-links">Gallery</a> </li>
                 <li> <a href="./pages/about_us.html" class="nav-links">About Us</a> </li>
                 <li> <a href="./pages/contact_us.html" class="nav-links">Contact Us</a> </li>
-                <li> <a href="./pages/our_locations.html" class="nav-links">Our Locations</a> </li>
+                <li> <a href="javascript:void(0)" class="nav-links" id="locations-btn">Our Locations</a> </li>
             </ul>
         </nav>
     </header>
@@ -73,12 +73,18 @@
             <h2>Our Menu</h2>
             <h3>Hello to You! You will find food, harmony, and happiness here.</h3>
             <div id="menu-cards">
-                <h3 class="menu-headings">Beverages</h3>
-                <img src="./assets/images/menu/beverages.jpg" class="menu-imgs">
-                <h3 class="menu-headings">Breakfast & Lunch</h3>
-                <img src="./assets/images/menu/breakfast-lunch.jpg" class="menu-imgs">
-                <h3 class="menu-headings">Food</h3>
-                <img src="./assets/images/menu/food.jpg" class="menu-imgs">
+                <div class="menu-item">
+                    <h3 class="menu-headings">Beverages</h3>
+                    <img src="./assets/images/menu/beverages.jpg" class="menu-imgs">
+                </div>
+                <div class="menu-item">
+                    <h3 class="menu-headings">Breakfast & Lunch</h3>
+                    <img src="./assets/images/menu/breakfast-lunch.jpg" class="menu-imgs">
+                </div>
+                <div class="menu-item">
+                    <h3 class="menu-headings">Food</h3>
+                    <img src="./assets/images/menu/food.jpg" class="menu-imgs">
+                </div>
             </div>
         </section>
         <section id="accordian-container">
@@ -86,8 +92,9 @@
                 <summary><i class="fa-solid fa-chevron-right"></i> Order and Delivery</summary>
                 <div class="accordian-text">
                     <p>
-                        To deliver our products to you, you've to use <a href="#">PickMe Food</a> or <a href="#">Uber
-                            Eats</a> services.
+                        To deliver our products to you, go to our <a href="./pages/delivery.html">Delivery</a> page and
+                        contact our
+                        delivery.
                     </p>
                 </div>
             </details>
@@ -95,7 +102,7 @@
                 <summary><i class="fa-solid fa-chevron-right"></i> Business Partners</summary>
                 <div class="accordian-text">
                     <p>
-                        To get to know about our business partners, <a href="#">contact us.</a>
+                        To get to know about our business partners, <a href="./pages/contact_us.html">contact us.</a>
                     </p>
                 </div>
             </details>
@@ -103,13 +110,13 @@
                 <summary><i class="fa-solid fa-chevron-right"></i> Careers</summary>
                 <div class="accordian-text">
                     <p>
-                        Visit our <a href="#">careers</a> page for available vacancies.
+                        Visit our <a href="./pages/careers.html">careers</a> page for available vacancies.
                     </p>
                 </div>
             </details>
         </section>
     </main>
-    <footer>
+    <footer id="footer">
         <img id="footer-logo" src="./assets/images/header/cafe_amakie_logo.jpg" alt="Cafe Amakie">
         <p id="footer-text">Café Amakie is one of the few places in Sri Lanka which offers the finest coffee experience!
         </p>
@@ -127,6 +134,7 @@
             <div id="copyright">
                 <p>&copy; 2022, Café Amakie - All Rights Reserved</p>
             </div>
+        </div>
     </footer>
 </body>
 

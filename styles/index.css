@@ -1,12 +1,13 @@
-/* CSS of the index page */
+/* CSS for the index page */
 
 /* Import main styles */
-@import url(./main.css);
+@import url(main.css);
 
 /* Video slider */
 #video-slider>video {
     position: absolute;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     inline-size: 100%;
     block-size: 100vh;
     transition: all 200ms linear;
@@ -41,7 +42,8 @@
     position: absolute;
     z-index: 1000000;
     width: 100%;
-    margin-block-start: -5rem;
+    -webkit-margin-before: -5rem;
+            margin-block-start: -5rem;
 }
 
 #slide-btn, #slide-btn-2, #slide-btn-3 {
@@ -53,9 +55,14 @@
     width: 50%;
     margin: .5rem 0;
     border-radius: 5px;
-    transition: all .7s ease-in-out;
+    transition: margin .7s ease-in-out;
     position: absolute;
     margin-top: -50rem;
+}
+
+#slide-btn:hover, #slide-btn-2:hover, #slide-btn-3:hover, #slide-btn:focus, #slide-btn-2:focus, #slide-btn-3:focus {
+    background-color: var(--palette-color-4);
+    color: var(--palette-color-1);
 }
 
 #slide-btn-2, #slide-btn-3 {
@@ -95,7 +102,8 @@
 
 #preview-gallery>h2, #menu>h2 {
     margin-block: .3rem;
-    text-decoration: 1px underline var(--palette-color-2);
+    -webkit-text-decoration: 1px underline var(--palette-color-2);
+            text-decoration: 1px underline var(--palette-color-2);
 }
 
 #prev-img-container, #menu-cards {
@@ -103,28 +111,41 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-block-end: 1.3rem;
+    -webkit-margin-after: 1.3rem;
+            margin-block-end: 1.3rem;
 }
 
 .prev-imgs, .menu-imgs {
     inline-size: 95vw;
-    margin-block-start: 20px;
+    -webkit-margin-before: 20px;
+            margin-block-start: 20px;
     border: 1px solid var(--palette-color-1);
     border-radius: 5px;
 }
 
+.menu-imgs {
+    box-shadow: 0px 0px 10px 2px var(--palette-color-4);
+}
+
 #gallery-btn {
     text-decoration: none;
-    border: 1px solid var(--palette-color-1);
+    border: 2px solid var(--palette-color-1);
     color: var(--palette-color-1);
     padding: .5rem .5rem;
     text-align: center;
     inline-size: 50%;
-    margin-block-start: 1rem;
-    margin-block-end: 1.3rem;
+    -webkit-margin-before: 1rem;
+            margin-block-start: 1rem;
+    -webkit-margin-after: 1.3rem;
+            margin-block-end: 1.3rem;
     border-radius: .2rem;
     transition: all .5s ease-in-out;
     font-weight: bold;
+}
+
+#gallery-btn:hover, #gallery-btn:focus {
+    background-color: var(--palette-color-1);
+    color: var(--palette-color-4);
 }
 
 /* Fixes for tablet screens */
@@ -155,7 +176,8 @@
     #prev-img-container {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        padding-inline-start: 5rem;
+        -webkit-padding-start: 5rem;
+                padding-inline-start: 5rem;
     }
     
     .prev-imgs {
@@ -178,23 +200,33 @@
 }
 
 #menu>h2 {
-    margin-block-end: 2rem;
+    -webkit-margin-after: 2rem;
+            margin-block-end: 2rem;
 }
 
 .menu-headings {
-    margin-block-start: 3rem;
-    margin-block-end: .1rem;
-    text-decoration: 1px underline var(--palette-color-1);
+    -webkit-margin-before: 3rem;
+            margin-block-start: 3rem;
+    -webkit-margin-after: .7rem;
+            margin-block-end: .7rem;
+    -webkit-text-decoration: 1px underline var(--palette-color-1);
+            text-decoration: 1px underline var(--palette-color-1);
 }
 
 .menu-imgs {
-    margin-block-start: .2rem;
+    -webkit-margin-before: .2rem;
+            margin-block-start: .2rem;
 }
 
 /* Fixes for laptop, desktop, and big screens */
 @media screen and (min-width: 1023px) {
     .menu-imgs {
-        inline-size: 60vw;
+        inline-size: 30vw;
+    }
+
+    #menu-cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -236,12 +268,14 @@ details > summary > i {
 /* Fixes for tablet screens */
 @media screen and (min-width: 767px) {
     details>summary {
-        margin-inline-start: 3rem;
+        -webkit-margin-start: 3rem;
+                margin-inline-start: 3rem;
         font-size: 1.5rem;
     }
 
     .accordian-text {
-        margin-inline-start : 4rem;
+        -webkit-margin-start : 4rem;
+                margin-inline-start : 4rem;
         font-size: 1.2rem;
     }
 }
