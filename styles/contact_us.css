@@ -94,6 +94,10 @@ div a i {
         inline-size: 70%;
         block-size: auto;
     }
+
+    #contact_us_main {
+        padding-inline: 2rem;
+    }
 }
 
 /* Fixes for laptops, desktops, and big screens */
