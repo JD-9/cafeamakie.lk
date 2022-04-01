@@ -121,8 +121,8 @@ blockquote > span {
     position: absolute;
     display: flex;
     flex-direction: column;
-    -webkit-margin-before: 2rem;
-            margin-block-start: 2rem;
+    -webkit-margin-before: 2.5rem;
+            margin-block-start: 2.5rem;
     left: 95%;
     transform: translateX(-50%);
 }
@@ -156,6 +156,7 @@ blockquote > span {
 .social h2 {
     font-size: 2rem;
     color: var(--palette-color-5);
+    margin-block-start: 2rem;
 }
 
 .social-icons a {
@@ -211,7 +212,7 @@ blockquote > span {
     }
 
     .slide img {
-        block-size: 100vh;
+        block-size: 100%;
     }
 
     .slide-controls {
@@ -226,5 +227,145 @@ blockquote > span {
     .social {
         -webkit-margin-before: 50rem;
                 margin-block-start: 50rem;
+    }
+
+    .social h2 {
+        margin-block-start: 2rem;
+    }
+}
+
+@media and screen (min-width: 1280px) {
+    .img-slider .slide-controls .control {
+        inline-size: 25px;
+        block-size: 25px;
+    }
+
+    blockquote {
+        font-size: 2rem;
+        -webkit-margin-before: 30rem;
+                margin-block-start: 30rem;
+        padding-inline: 15rem;
+    }
+
+    .slide img {
+        block-size: 100%;
+    }
+
+    .slide-controls {
+        top: 20rem;
+    }
+
+    main {
+        -webkit-padding-before: 12rem;
+                padding-block-start: 12rem;
+    }
+
+    .social {
+        -webkit-margin-before: 70rem;
+                margin-block-start: 70rem;
+    }
+
+    .social h2 {
+        margin-block-start: 4rem;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    .img-slider .slide-controls .control {
+        inline-size: 25px;
+        block-size: 25px;
+    }
+
+    blockquote {
+        font-size: 2rem;
+        -webkit-margin-before: 30rem;
+                margin-block-start: 30rem;
+        padding-inline: 15rem;
+    }
+
+    .slide img {
+        block-size: 100%;
+    }
+
+    .slide-controls {
+        top: 20rem;
+    }
+
+    main {
+        -webkit-padding-before: 8.5rem;
+                padding-block-start: 8.5rem;
+    }
+
+    .social {
+        -webkit-margin-before: 60rem;
+                margin-block-start: 60rem;
+    }
+
+    .social h2 {
+        margin-block-start: 4rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .img-slider .slide-controls .control {
+        inline-size: 25px;
+        block-size: 25px;
+    }
+
+    blockquote {
+        font-size: 2rem;
+        -webkit-margin-before: 30rem;
+                margin-block-start: 30rem;
+        padding-inline: 15rem;
+    }
+
+    .slide img {
+        block-size: 100%;
+    }
+
+    .slide-controls {
+        top: 20rem;
+    }
+
+    main {
+        -webkit-padding-before: 8.5rem;
+                padding-block-start: 8.5rem;
+    }
+
+    .social {
+        -webkit-margin-before: 60rem;
+                margin-block-start: 60rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .img-slider .slide-controls .control {
+        inline-size: 30px;
+        block-size: 30px;
+    }
+
+    blockquote {
+        font-size: 2.5rem;
+        -webkit-margin-before: 35rem;
+                margin-block-start: 35rem;
+        padding-inline: 20rem;
+    }
+
+    .slide img {
+        block-size: auto;
+    }
+
+    .slide-controls {
+        top: 25rem;
+    }
+
+    main {
+        -webkit-padding-before: 8.5rem;
+                padding-block-start: 8.5rem;
+    }
+
+    .social {
+        -webkit-margin-before: 105rem;
+                margin-block-start: 105rem;
     }
 }
