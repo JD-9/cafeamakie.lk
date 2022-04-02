@@ -156,7 +156,8 @@ blockquote > span {
 .social h2 {
     font-size: 2rem;
     color: var(--palette-color-5);
-    margin-block-start: 2rem;
+    -webkit-margin-before: 2rem;
+            margin-block-start: 2rem;
 }
 
 .social-icons a {
@@ -230,7 +231,8 @@ blockquote > span {
     }
 
     .social h2 {
-        margin-block-start: 2rem;
+        -webkit-margin-before: 2rem;
+                margin-block-start: 2rem;
     }
 }
 
@@ -266,7 +268,8 @@ blockquote > span {
     }
 
     .social h2 {
-        margin-block-start: 4rem;
+        -webkit-margin-before: 4rem;
+                margin-block-start: 4rem;
     }
 }
 
@@ -302,7 +305,8 @@ blockquote > span {
     }
 
     .social h2 {
-        margin-block-start: 4rem;
+        -webkit-margin-before: 4rem;
+                margin-block-start: 4rem;
     }
 }
 
