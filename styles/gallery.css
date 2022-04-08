@@ -9,8 +9,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    -webkit-padding-before: 8rem;
-            padding-block-start: 8rem;
+    padding-top: 8rem;
     background-color: var(--palette-color-2);
 }
 
@@ -27,25 +26,24 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-inline: 1.3rem;
+    padding: 0 1.3rem;
 }
 
 #gallery-container > div {
-    margin-block: 1rem;
-    inline-size: 80vw;
+    margin: 1rem 0;
+    width: 80vw;
 }
 
 #gallery-container > div > img {
-    inline-size: 100%;
+    width: 100%;
     border: 1px solid var(--palette-color-4);
     border-radius: .3rem;
 }
 
 /* Fixes for laptop, desktop, and big screens */
-@media screen and (min-width: 1023px) {
+@media screen and (min-width: 1024px) {
     #gallery {
-        -webkit-padding-before: 12rem;
-                padding-block-start: 12rem;
+        padding-top: 12rem;
     }
 
     #gallery-container {
@@ -54,18 +52,17 @@
     }
 
     #gallery-container > div {
-        inline-size: 40vw;
-        block-size: 100%;
-        margin-inline: 2rem;
-        margin-block: 2rem;
+        width: 40vw;
+        height: 100%;
+        margin: 2rem 2rem;
     }
 
     #gallery-heading {
-        -webkit-margin-after: 2rem;
-                margin-block-end: 2rem;
+        margin-bottom: 2rem;
     }
 
     #gallery-container > div > img {
-        
+        width: 100%;
+        height: 90%;
     }
 }
