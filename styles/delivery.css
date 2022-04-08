@@ -5,21 +5,18 @@
 
 /* Fixes for the HTML main */
 main {
-    -webkit-padding-before: 8rem;
-            padding-block-start: 8rem;
+    padding-top: 8rem;
+    padding-bottom: 2rem;
     background-image: url(../assets/images/backgrounds/noise-1.png);
     background-color: var(--palette-color-1);
     font-size: 2rem;
-    padding-inline: .3rem;
-    -webkit-padding-after: 2rem;
-            padding-block-end: 2rem;
+    padding: 0 .3rem;
 }
 
 /* Fixes for laptops, desktops, and big screens */
 @media screen and (min-width: 1024px) {
     main {
-        -webkit-padding-before: 10rem;
-                padding-block-start: 10rem;
+        padding-top: 10rem;
     }
 }
 
@@ -28,7 +25,7 @@ h2 {
     color: var(--palette-color-4);
     font-size: 2.3rem;
     text-align: center;
-    padding-block: 1.2rem;
+    padding: 1.2rem 0;
     text-decoration: underline;
 }
 
@@ -48,18 +45,17 @@ h2 {
 }
 
 #delivery-img-container, #drive-thru-img-container {
-    padding-block: 2rem;
+    padding: 2rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
 #delivery-img, #drive-thru-img {
-    inline-size: 90vw;
-    block-size: 100%;
+    width: 90vw;
+    height: 100%;
 }
 
 #drive-thru-heading {
-    -webkit-margin-before: 4rem;
-            margin-block-start: 4rem;
+    margin-top: 4rem;
 }
