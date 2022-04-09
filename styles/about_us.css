@@ -13,47 +13,43 @@ body {
 }
 
 main {
-    -webkit-padding-before: 6rem;
-            padding-block-start: 6rem;
+    padding-top: 6rem;
     font-size: 2rem;
-    -webkit-padding-after: 2rem;
-            padding-block-end: 2rem;
+    padding-bottom: 2rem;
     background-color: var(--alt-color-1);
     background-image: url(../assets/images/backgrounds/noise-1.png);
 }
 
 /* About us section */
 .about-us {
-    padding-block: 1rem;
+    padding: 1rem 0;
     background: var(--palette-color-5);
 }
 
 .about-us h2 {
     font-size: 2rem;
-    -webkit-margin-after: 1.5rem;
-            margin-block-end: 1.5rem;
+    margin-bottom: 1.5rem;
     text-align: center;
     color: var(--palette-color-4);
 }
 
 .about-us p {
     font-size: 1.2rem;
-    padding-inline: 1.3rem;
+    padding: 0 1.3rem;
     color: var(--alt-color-1);
     line-height: 1.5;
 }
 
 .about-us p i {
-    -webkit-margin-end: .5rem;
-            margin-inline-end: .5rem;
+    margin-right: .5rem;
     color: var(--palette-color-4);
 }
 
 /* Image slider */
 .img-slider {
     position: relative;
-    inline-size: 100%;
-    block-size: 100%;
+    width: 100%;
+    height: 100%;
     background: var(--palette-color-4);
 }
 
@@ -61,22 +57,18 @@ main {
 .img-slider .slide {
     z-index: 1;
     position: absolute;
-    inline-size: 100%;
-    -webkit-clip-path: circle(0% at 50% 0);
-            clip-path: circle(0% at 50% 0);
+    width: 100%;
+    clip-path: circle(0% at 50% 0);
 }
 
 .img-slider .slide.active {
-    -webkit-clip-path: circle(100.0% at 50% 0);
-            clip-path: circle(100.0% at 50% 0);
-    transition: -webkit-clip-path 2s;
+    clip-path: circle(100.0% at 50% 0);
     transition: clip-path 2s;
-    transition: clip-path 2s, -webkit-clip-path 2s;
 }
 
 .img-slider .slide img {
     z-index: 1;
-    inline-size: 100%;
+    width: 100%;
 }
 
 /* Review */
@@ -86,7 +78,7 @@ main {
     height: 100%;
     overflow: hidden;
     font-size: 1rem;
-    padding-block: 1rem;
+    padding: 1rem 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -98,7 +90,7 @@ blockquote {
     color: paleturquoise;
     font-weight: bold;
     text-shadow: 1px 1px 1px rgba(3, 54, 123, 1);
-    padding-inline: 2rem;
+    padding: 0 2rem;
     border-radius: .5rem;
 }
 
@@ -111,8 +103,7 @@ blockquote > span {
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    -webkit-margin-before: .3rem;
-            margin-block-start: .3rem;
+    margin-top: .3rem;
 }
 
 /* Slide controls */
@@ -121,16 +112,15 @@ blockquote > span {
     position: absolute;
     display: flex;
     flex-direction: column;
-    -webkit-margin-before: 2.5rem;
-            margin-block-start: 2.5rem;
+    margin-top: 2.5rem;
     left: 95%;
     transform: translateX(-50%);
 }
 
 .img-slider .slide-controls .control {
     background: var(--alt-color-1);
-    inline-size: 12px;
-    block-size: 12px;
+    width: 12px;
+    height: 12px;
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
@@ -144,24 +134,21 @@ blockquote > span {
 
 /* Social section */
 .social {
-    -webkit-margin-before: 16rem;
-            margin-block-start: 16rem;
+    margin-top: 16rem;
     background-color: var(--alt-color-1);
     background-image: url(../assets/images/backgrounds/noise-1.png);
     text-align: center;
-    -webkit-padding-before: 1rem;
-            padding-block-start: 1rem;
+    padding-top: 1rem;
 }
 
 .social h2 {
     font-size: 2rem;
     color: var(--palette-color-5);
-    -webkit-margin-before: 2rem;
-            margin-block-start: 2rem;
+    margin-top: 2rem;
 }
 
 .social-icons a {
-    margin-inline: 1rem;
+    margin: 0 1rem;
 }
 
 .social-icons a:first-child {
@@ -175,8 +162,8 @@ blockquote > span {
 /* Fixes for tablets */
 @media screen and (min-width: 768px) {
     .img-slider .slide-controls .control {
-        inline-size: 15px;
-        block-size: 15px;
+        width: 15px;
+        height: 15px;
     }
 
     blockquote {
@@ -188,32 +175,29 @@ blockquote > span {
     }
 
     blockquote {
-        -webkit-margin-before: 22rem;
-                margin-block-start: 22rem;
+        margin-top: 22rem;
     }
 
     .social {
-        -webkit-margin-before: 35rem;
-                margin-block-start: 35rem;
+        margin-top: 35rem;
     }
 }
 
 /* Fixes for laptops, desktops, and big screens */
 @media screen and (min-width: 1024px) {
     .img-slider .slide-controls .control {
-        inline-size: 20px;
-        block-size: 20px;
+        width: 20px;
+        height: 20px;
     }
 
     blockquote {
         font-size: 1.5rem;
-        -webkit-margin-before: 25rem;
-                margin-block-start: 25rem;
-        padding-inline: 10rem;
+        margin-top: 25rem;
+        padding: 0 10rem;
     }
 
     .slide img {
-        block-size: 100%;
+        height: 100%;
     }
 
     .slide-controls {
@@ -221,36 +205,32 @@ blockquote > span {
     }
 
     main {
-        -webkit-padding-before: 8.5rem;
-                padding-block-start: 8.5rem;
+        padding-top: 8.5rem;
     }
 
     .social {
-        -webkit-margin-before: 50rem;
-                margin-block-start: 50rem;
+        margin-top: 50rem;
     }
 
     .social h2 {
-        -webkit-margin-before: 2rem;
-                margin-block-start: 2rem;
+        margin-top: 2rem;
     }
 }
 
 @media and screen (min-width: 1280px) {
     .img-slider .slide-controls .control {
-        inline-size: 25px;
-        block-size: 25px;
+        width: 25px;
+        height: 25px;
     }
 
     blockquote {
         font-size: 2rem;
-        -webkit-margin-before: 30rem;
-                margin-block-start: 30rem;
-        padding-inline: 15rem;
+        margin-top: 30rem;
+        padding: 0 15rem;
     }
 
     .slide img {
-        block-size: 100%;
+        height: 100%;
     }
 
     .slide-controls {
@@ -258,36 +238,32 @@ blockquote > span {
     }
 
     main {
-        -webkit-padding-before: 12rem;
-                padding-block-start: 12rem;
+        padding-top: 12rem;
     }
 
     .social {
-        -webkit-margin-before: 70rem;
-                margin-block-start: 70rem;
+        margin-top: 70rem;
     }
 
     .social h2 {
-        -webkit-margin-before: 4rem;
-                margin-block-start: 4rem;
+        margin-top: 4rem;
     }
 }
 
 @media screen and (min-width: 1366px) {
     .img-slider .slide-controls .control {
-        inline-size: 25px;
-        block-size: 25px;
+        width: 25px;
+        height: 25px;
     }
 
     blockquote {
         font-size: 2rem;
-        -webkit-margin-before: 30rem;
-                margin-block-start: 30rem;
-        padding-inline: 15rem;
+        margin-top: 30rem;
+        padding: 0 15rem;
     }
 
     .slide img {
-        block-size: 100%;
+        height: 100%;
     }
 
     .slide-controls {
@@ -295,36 +271,32 @@ blockquote > span {
     }
 
     main {
-        -webkit-padding-before: 8.5rem;
-                padding-block-start: 8.5rem;
+        padding-top: 8.5rem;
     }
 
     .social {
-        -webkit-margin-before: 60rem;
-                margin-block-start: 60rem;
+        margin-top: 60rem;
     }
 
     .social h2 {
-        -webkit-margin-before: 4rem;
-                margin-block-start: 4rem;
+        margin-top: 4rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
     .img-slider .slide-controls .control {
-        inline-size: 25px;
-        block-size: 25px;
+        width: 25px;
+        height: 25px;
     }
 
     blockquote {
         font-size: 2rem;
-        -webkit-margin-before: 30rem;
-                margin-block-start: 30rem;
-        padding-inline: 15rem;
+        margin-top: 30rem;
+        padding: 0 15rem;
     }
 
     .slide img {
-        block-size: 100%;
+        height: 100%;
     }
 
     .slide-controls {
@@ -332,31 +304,28 @@ blockquote > span {
     }
 
     main {
-        -webkit-padding-before: 8.5rem;
-                padding-block-start: 8.5rem;
+        padding-top: 8.5rem;
     }
 
     .social {
-        -webkit-margin-before: 60rem;
-                margin-block-start: 60rem;
+        margin-top: 60rem;
     }
 }
 
 @media screen and (min-width: 2560px) {
     .img-slider .slide-controls .control {
-        inline-size: 30px;
-        block-size: 30px;
+        width: 30px;
+        height: 30px;
     }
 
     blockquote {
         font-size: 2.5rem;
-        -webkit-margin-before: 35rem;
-                margin-block-start: 35rem;
-        padding-inline: 20rem;
+        margin-top: 35rem;
+        padding: 0 20rem;
     }
 
     .slide img {
-        block-size: auto;
+        height: auto;
     }
 
     .slide-controls {
@@ -364,12 +333,10 @@ blockquote > span {
     }
 
     main {
-        -webkit-padding-before: 8.5rem;
-                padding-block-start: 8.5rem;
+        padding-top: 8.5rem;
     }
 
     .social {
-        -webkit-margin-before: 105rem;
-                margin-block-start: 105rem;
+        margin-top: 105rem;
     }
 }
