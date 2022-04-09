@@ -278,6 +278,11 @@ details > summary {
     font-size: 1.3rem;
     padding: 0 1.2rem;
     color: var(--palette-color-2);
+    outline: none;
+}
+
+details summary::-webkit-details-marker {
+    display: none;
 }
 
 details > summary > i {
