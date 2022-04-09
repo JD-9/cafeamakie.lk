@@ -6,9 +6,12 @@
 /* Video slider */
 #video-slider>video {
     position: absolute;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
     width: 100%;
     height: 100vh;
+    -webkit-transition: all 200ms linear;
+    -o-transition: all 200ms linear;
     transition: all 200ms linear;
     z-index: 10;
 }
@@ -16,12 +19,16 @@
 #video-slide-1 {
     opacity: 1;
     width: 100vw;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
 #video-slide-2, #video-slide-3 {
     opacity: 0;
     width: 100vw;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
@@ -34,10 +41,19 @@
     padding: .5rem;
     color: var(--palette-color-4);
     font-size: 1.5rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     position: absolute;
     z-index: 1000000;
     width: 100%;            
@@ -53,6 +69,8 @@
     width: 50%;
     margin: .5rem 0;
     border-radius: 5px;
+    -webkit-transition: margin .7s ease-in-out;
+    -o-transition: margin .7s ease-in-out;
     transition: margin .7s ease-in-out;
     position: absolute;
     margin-top: 0rem;
@@ -99,14 +117,24 @@
 
 #preview-gallery>h2, #menu>h2 {
     margin: .3rem;
-    text-decoration: 1px underline var(--palette-color-2);
+    -webkit-text-decoration: 1px underline var(--palette-color-2);
+            text-decoration: 1px underline var(--palette-color-2);
 }
 
 #prev-img-container, #menu-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin-bottom: 1.3rem;
 }
 
@@ -118,7 +146,8 @@
 }
 
 .menu-imgs {
-    box-shadow: 0px 0px 10px 2px var(--palette-color-4);
+    -webkit-box-shadow: 0px 0px 10px 2px var(--palette-color-4);
+            box-shadow: 0px 0px 10px 2px var(--palette-color-4);
 }
 
 #gallery-btn {
@@ -131,6 +160,8 @@
     margin-top: 1rem;
     margin-bottom: 1.3rem;
     border-radius: .2rem;
+    -webkit-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     font-weight: bold;
 }
@@ -158,15 +189,26 @@
 /* Fixes for laptops, desktops, and big screens */
 @media screen and (min-width: 1024px) {
     #preview-gallery {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
         text-align: center;
     }
 
     #prev-img-container {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         padding-left: 5rem;
     }
@@ -197,7 +239,8 @@
 .menu-headings {
             margin-top: 3rem;
             margin-bottom: .7rem;
-            text-decoration: 1px underline var(--palette-color-1);
+            -webkit-text-decoration: 1px underline var(--palette-color-1);
+                    text-decoration: 1px underline var(--palette-color-1);
 }
 
 .menu-imgs {
@@ -211,7 +254,9 @@
     }
 
     #menu-cards {
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
