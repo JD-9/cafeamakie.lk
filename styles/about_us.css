@@ -1,11 +1,10 @@
-/* CSS for the about us page */
-
 /* Import main styles */
 @import url(main.css);
 
 /* Fixes for the HTML root/main/body */
 * {
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
 }
 
 body {
@@ -58,12 +57,18 @@ main {
     z-index: 1;
     position: absolute;
     width: 100%;
-    clip-path: circle(0% at 50% 0);
+    -webkit-clip-path: circle(0% at 50% 0);
+            clip-path: circle(0% at 50% 0);
 }
 
 .img-slider .slide.active {
-    clip-path: circle(100.0% at 50% 0);
+    -webkit-clip-path: circle(100.0% at 50% 0);
+            clip-path: circle(100.0% at 50% 0);
+    -webkit-transition: -webkit-clip-path 2s;
+    transition: -webkit-clip-path 2s;
+    -o-transition: clip-path 2s;
     transition: clip-path 2s;
+    transition: clip-path 2s, -webkit-clip-path 2s;
 }
 
 .img-slider .slide img {
@@ -79,10 +84,19 @@ main {
     overflow: hidden;
     font-size: 1rem;
     padding: 1rem 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     line-height: 1.5;
 }
 
@@ -100,9 +114,15 @@ blockquote > span {
 
 .stars {
     color: var(--palette-color-4);
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: flex-end;
-    justify-content: flex-end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     margin-top: .3rem;
 }
 
@@ -110,11 +130,18 @@ blockquote > span {
 .img-slider .slide-controls {
     z-index: 2;
     position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 2.5rem;
     left: 95%;
-    transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
 }
 
 .img-slider .slide-controls .control {
@@ -124,12 +151,15 @@ blockquote > span {
     margin: 10px;
     border-radius: 50%;
     cursor: pointer;
+    -webkit-transition: all 1s;
+    -o-transition: all 1s;
     transition: all 1s;
 }
 
 .img-slider .slide-controls .control.active {
     background: var(--palette-color-4);
-    box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+    -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+            box-shadow: 0 0 2px rgba(0, 0, 0, .5);
 }
 
 /* Social section */
