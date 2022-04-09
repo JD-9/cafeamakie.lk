@@ -13,10 +13,8 @@ body {
 }
 
 main {
-    -webkit-padding-before: 6rem;
-            padding-block-start: 6rem;
+    padding-top: 6rem;
     font-size: 2rem;
-    -webkit-padding-after: 2rem;
-            padding-block-end: 2rem;
+    padding-bottom: 2rem;
     background-color: var(--palette-color-1);
 }
