@@ -8,10 +8,6 @@ let slideBtn = document.getElementById('slide-btn');
 let slideBtn2 = document.getElementById('slide-btn-2');
 let slideBtn3 = document.getElementById('slide-btn-3');
 
-window.onload = function () {
-    // slideBtn.style.marginTop = '-10rem';
-}
-
 videoSlide1.onended = function () {
     videoSlide2.play();
     videoSlide1.style.opacity = 0;
@@ -20,8 +16,6 @@ videoSlide1.onended = function () {
     slideBtn.style.visibility = 'hidden';
     slideBtn2.style.opacity = 1;
     slideBtn2.style.visibility = 'visible';
-    slideBtn2.style.marginTop = '0';
-    slideBtn3.style.marginTop = '-20rem';
 }
 
 videoSlide2.onended = function () {
@@ -33,7 +27,6 @@ videoSlide2.onended = function () {
     slideBtn3.style.opacity = 1;
     slideBtn3.style.visibility = 'visible';
     slideBtn3.style.marginTop = '0';
-    slideBtn.style.marginTop = '-20rem';
 }
 
 videoSlide3.onended = function () {
@@ -44,8 +37,14 @@ videoSlide3.onended = function () {
     slideBtn3.style.visibility = 'hidden';
     slideBtn.style.opacity = 1;
     slideBtn.style.visibility = 'visible';
-    slideBtn.style.marginTop = '0';
-    slideBtn2.style.marginTop = '-20rem';
+}
+
+// Our menu button scroll animation
+let cafeMenu = document.getElementById('menu');
+slideBtn.addEventListener('click', navigateToTheMenu, false);
+
+function navigateToTheMenu(event) {
+    cafeMenu.scrollIntoView({ behavior: 'smooth' });
 }
 
 // Accordian at the bottom
