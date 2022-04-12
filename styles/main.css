@@ -131,9 +131,9 @@ header{
 
 .nav-active {
     color: var(--palette-color-3);
-    -webkit-transition: color .5s ease-in-out;
-    -o-transition: color .5s ease-in-out;
-    transition: color .5s ease-in-out;
+    -webkit-transition: color .5s ease-out;
+    -o-transition: color .5s ease-out;
+    transition: color .5s ease-out;
 }
 
 #nav-list {
@@ -189,7 +189,7 @@ header{
 /* Fixes for laptops, desktops, and big screens */
 @media screen and (min-width: 1024px) {
     header {
-        block-size: 140px;
+        height: 140px;
     }
 
     #header-logo {
@@ -237,10 +237,11 @@ header{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
+        padding: .5rem;
     }
 
-    #nav-list > li {
-        border: 0;
+    #nav-list li {
+        border-bottom: 1px solid;
         padding-top: 0;
         padding-bottom: 0;
         -webkit-transition: all .5s ease-in-out;
@@ -248,15 +249,16 @@ header{
         transition: all .5s ease-in-out;
     }
 
-    #nav-list > li:hover {
-        border-bottom: 1px solid var(--palette-color-2);
+    #nav-list li:hover {
+        border-bottom: 1px solid var(--palette-color-4);
+        margin-top: -5px;
     }
 
-    #nav-list > li > a {
+    #nav-list li a {
         font-size: 1.5rem;
         font-weight: normal;
-        padding-top: 0;
-        padding-bottom: 0;
+        padding-top: .5rem;
+        padding-bottom: .5rem;
     }
 }
 
