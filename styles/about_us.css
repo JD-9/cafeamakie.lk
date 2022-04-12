@@ -26,16 +26,26 @@ main {
 
 .about-us h2 {
     font-size: 2rem;
-    margin-bottom: 1.5rem;
+    margin: 1.5rem;
     text-align: center;
     color: var(--palette-color-4);
 }
 
+#about_us_img {
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+}
+
 .about-us p {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
     padding: 0 1.3rem;
     color: var(--alt-color-1);
     line-height: 1.5;
+}
+
+.about-us p:first-child {
+    margin-bottom: 4rem;
 }
 
 .about-us p i {
